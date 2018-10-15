@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Country roads...take me home...</a><br>
+    <a href="/authors">Authors index</a>
+    <h1>An Author is Born</h1>
+    <!-- Action is what route the request will be sent to -->
+    <form action="/authors" method="POST">
+        <!-- The name attribute sets the key in request.body {name: value}-->
+        Name: <input type="text" name="name">
+        <input type="submit" value="GO">
+    </form>
+</body>
+</html>

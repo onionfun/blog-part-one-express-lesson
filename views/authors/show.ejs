@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/"> 10 Home <br> 20 Sweet <br> 30 Go to 10</a><br>
+    <a href="/authors">Authors index</a>
+    <h1>Here is the author named <%= author.name %></h1>
+    <form action="/authors/<%= author.id %>?_method=DELETE" method="POST">
+        <p><%= author.name %>'s writings are not in line with Party thinking. Send them to the gulag!</p>
+        <input type="submit" value="Do svidonya, tovarisch">
+    </form>
+    <a href="/authors/<%=author.id%>/edit">Re-educate <%=author.name%></a>
+</body>
+</html>

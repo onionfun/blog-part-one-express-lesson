@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Screw you guys, I'mma goin home</a><br>
+    <a href="/authors/new">Create a new author</a>
+    <h1>What a lovely collection of authors we have</h1>
+    <% authors.forEach((author)=>{ %>
+        <div class="author-data">
+            <h4><a href="/authors/<%=author.id%>"><%= author.name %></a></h4>
+        </div>
+    <% }) %>
+</body>
+</html>
